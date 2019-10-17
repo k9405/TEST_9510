@@ -17,7 +17,7 @@ suite.addTest(HandleBg("test_3_alter_emp"))
 suite.addTest(HandleBg("test_4_del_emp"))
 
 file = "./report/report1996"
-with open(file + ".html") as f:
+with open(file + ".html","wb") as f:
 
     runner = HTMLTestRunner(f, title="我的报告", description="chrome")
 
